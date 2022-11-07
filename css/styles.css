@@ -1,0 +1,164 @@
+body{
+    margin: 0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    /* font-size being declared within the body styling, will be added to all the elements, if one element font-size is 10% and
+    the body font-size is 10%, that element would have 20%, but if used with static parameters like pixels, the font-size stated
+    withing the element will be chosen.
+    in css3, using rem will change the element no matter it's parent parameter, the r in rem is the root, relative to it's own size */
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Sacramento', cursive;
+    font-size: 562.5%; /*100% = 16px => 90px/16px = 5.625 to get to 90px multiply the result with 100(%) */
+    /* we do that because sometimes in the browser settings people need to change the font size in their settings in order to see well
+    so by making it percentage we are helping them enhance their view, while with clear px, it wont change */
+    /* another way of declaring fonts is by using font-size = em, 1em = 100% // 16px  */
+    margin: 30px auto 0 auto;
+    color: #66BFBF;
+    line-height: 2;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #66BFBF;
+    margin: 15px auto 0 auto;
+    font-weight: normal
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+    color: #11999E;
+    margin: 20px auto 0 auto;
+}
+
+hr{
+    margin: 0;
+    border-style: none;
+    border-top: dotted;
+    border-color: rgb(165, 164, 164);
+    border-width: 5px;
+    width: 5%;
+    margin-left: 47%;
+}
+
+p{
+    margin: 10px auto 10px auto;
+    line-height: 2;
+}
+
+.top-container{
+    background-color: #e3fbfe;
+    padding-top: 150px;
+}
+
+.top-cloud {
+    position: absolute;
+    top: 100px;
+    right: 320px;
+}
+
+.bot-cloud {
+    position: absolute;
+    left: 320px;
+    bottom: 250px;
+}
+
+.middle-container{
+    position: relative;
+    padding-top: 30px;
+    background-color: #C3F8FF;
+}
+
+ul{
+    margin: 0;
+}
+
+li{
+    text-align: left;
+    margin: 10px auto 20px auto;
+}
+
+.skills{
+    position: relative;
+}
+
+.skill-row{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.education{
+    background-color: #C3F8FF;
+}
+
+.year{
+    color: #898787;
+    margin: 5px auto 5px auto;
+}
+
+.bottom-container {
+    position: relative;
+    background-color: #C3F8FF;
+}
+
+.bot-h2{
+    padding-bottom: 20px;
+}
+
+.footer-link:link{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: #11999E;
+}
+
+.footer-link:visited{
+    color: #11999E;
+}
+
+.footer-link:hover{
+    color: black;
+}
+
+.btn {
+    background: #11cdd4;
+    background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #30e3cb;
+    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+    text-decoration: none;
+}
+
+.websites{
+    margin-top: 50px;
+}
+
+.websites img{
+    margin-left: 40px;
+}
+
+.copyright{
+    margin-bottom: 0;
+    font-size: 0.85rem;
+    padding: 20px 0;
+}
